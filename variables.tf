@@ -1,4 +1,5 @@
 variable "iam_policies" {
+    description = "A list of objects whose keys match the arguments for the `aws_iam_policy` resource and the `aws_iam_policy_document` data source."
     type = list(object({
         name = string,
         path = string,
